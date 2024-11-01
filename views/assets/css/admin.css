@@ -1,0 +1,147 @@
+.wrap h1 {
+    margin: 1em 0;
+}
+.wrap h2 {
+    text-transform: uppercase;
+    color: #555;
+    font-size: 3em;
+    text-align: center;
+    border-top: 3px solid;
+    line-height: 1.7;
+}
+.wrap h3 {
+    margin: 4em 0 1em;
+    text-align: center;
+}
+table {
+    margin: 2em auto;
+    width: 60%;
+    min-width: 280px;
+}
+#worst-table {
+    width: 100%;
+}
+table td, table th {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+}
+th, td {
+  padding: .765em 1.2em;
+}
+.legend {
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+    margin: 0 -.6rem;
+}
+.legend .leg {
+    width: 100%;
+    margin: 0 .6rem;
+    display: flex;
+}
+.legend .range {
+    width: 100%;
+    padding: 0.5em .3em;
+    box-sizing: border-box;
+}
+.legend .ranges {
+    width: 100%;
+    flex-grow: 2;
+}
+.legend .name {
+    width: 50%;
+    font-size: 2em;
+    padding: 1em .4em;
+    background: #ddd;
+    flex-grow: 1;
+}
+.legend .value {
+    font-size: 1em;
+}
+.legend .label {
+    text-transform: uppercase;
+    display: block;
+    font-size: .7em;
+    line-height: 1.4;
+}
+.legend .avg-val {
+    display: block;
+    line-height: 1.7;
+    margin-top: .3em;
+    text-shadow: 0px 0 0px rgba(0,0,0,.5);
+}
+p.small {
+    font-style: italic;
+    color: #888;
+    font-size: .8em;
+}
+#faq {
+    margin: 4em auto;
+    padding-top: 3em;
+    max-width: 600px;
+    text-align: center;
+}
+#faq h3 {
+    margin-top: 0;
+}
+#cwv-desc b {
+    color: #0072aa;
+}
+#cwv-desc p {
+    margin-top: 0;
+}
+@media screen and (min-width: 783px) {
+    .flex-row {
+        display: flex;
+        margin: 0 -1rem;
+    }
+    .flex-col {
+        width: 100%;
+        margin: 0 1rem;
+    }
+}
+
+@media screen and (max-width: 782px) {
+    .legend {
+        display: block;
+        max-width: 100%;
+        margin: 0;
+    }
+    .legend .leg {
+        margin: 1em 0;
+    }
+    .ranges {
+        width: 100%;
+        display: flex;
+    }
+    .legend .name {
+        min-width: 3em;
+    }
+    .legend .range {
+        padding: 1.5em 0.5em 1em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .legend .leg {
+        display: block;
+    }
+    .legend .name {
+        width: 100%;
+        display: block;
+        padding: .5em 0;
+        font-size: 1.8em;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    #table-vitals td {
+        font-size: .9em;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    #table-vitals td {
+        font-size: .75em;
+    }
+}
